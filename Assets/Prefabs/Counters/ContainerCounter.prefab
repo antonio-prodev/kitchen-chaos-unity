@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ContainerCounter
   counterTopPoint: {fileID: 8957088677904602931}
-  kitchenObjectSO: {fileID: 11400000, guid: 02a0d41c4d91c654cacf44a8daf1d9fd, type: 2}
+  kitchenObjectSO: {fileID: 11400000, guid: 242bdec5ca821c843b95948824a55ed0, type: 2}
 --- !u!4 &8125242899736495736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4289790535038948, guid: 038cc1adac0d7004780a7065f8d3a183, type: 3}
