@@ -14,39 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1774841588
+  lastShownTimestamp: 1774932209
   lastUpdateResponse:
-    version: 1.00
+    version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1774841590
+  checkedLastUpdateTimestamp: 1774932209
   lastQOTDResponse:
-    questionId: 163
-    questionText: What is the purpose of Unity Hub?
-    answerA: Provide a space for the community to interact
-    answerB: Manage different Unity versions and Projects
-    answerC: Dashboard for Unity services
+    questionId: 287
+    questionText: 'What is the Color on the SpriteRenderer after running this code?
+
+      <p>Color
+      myColor = Color.red;</p>
+
+      <p>spriteRenderer.color = myColor;</p>
+
+      <p>myColor
+      = Color.blue;</p>'
+    answerA: Red
+    answerB: Blue
+    answerC: Don't Know
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1774841590
+  lastQotdTimestamp: 1774932209
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25.png
-    topText: Make ANY game with these awesome Assets! (96% OFF ENDS SOON!)
-    topLink: humblebundle
-    bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
-    bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1774841590
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevPracticeLab_2.png
+    topText: Weekly Game Mechanic Challenges to help you learn by DOING!
+    topLink: practicelab
+    bottomText: My 10+ Years of C# Knowledge in 1 Course!
+    bottomLink: csharpcourse
+  lastDynamicHeaderTimestamp: 1774932209
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1774841590
+  websiteLatestMessageTimestamp: 1774932209
   websiteLatestVideos:
     videos:
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-    - youTubeId: W_XOZAWJF24
-      title: I made the MOST PROFITABLE Game as a Test!
-    - youTubeId: J0KMvH-yFmA
-      title: TOP 10 NEW Games, Made with Unity! (FEBRUARY 2025)
-    - youTubeId: DOSLOa7cnoE
-      title: I SHOULD have done this a long time ago, and YOU too!
-  websiteLatestVideosTimestamp: 1774841590
+    - youTubeId: 9HX48q7gbBw
+      title: What exactly is a SMALL game?
+    - youTubeId: a6Nv4k2Mqng
+      title: TOP 10 NEW Systems and Tools MARCH 2026! | Unity Asset Store
+    - youTubeId: Ng0VH0SmqRo
+      title: I've wanted to do this for YEARS!
+    - youTubeId: iHOtW9ErfNw
+      title: Game Development is a LIE!
+  websiteLatestVideosTimestamp: 1774932209
