@@ -48,7 +48,7 @@ public class StoveCounter : BaseCounter, IHasProgress
                     {
                         progressNormalized = fryingTimer / fryingRecipeSO.fryingTimerMax
                     });
-                    
+
                     if (fryingTimer > fryingRecipeSO.fryingTimerMax)
                     {
                         // Fried
@@ -148,6 +148,24 @@ public class StoveCounter : BaseCounter, IHasProgress
             else
             {
                 // player already has a kitchen object
+                if (player.GetKitchenObject().TryGetPlate(out PlateKitchenObject plateKitchenObject))
+                {
+                    if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+                    }
+
+                    state = State.Idle;
+                    OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                    {
+                        state = state
+                    });
+
+                    OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                    {
+                        progressNormalized = 0f
+                    });
+                }
             }
         }
     }
