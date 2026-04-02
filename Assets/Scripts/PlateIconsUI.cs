@@ -4,13 +4,13 @@ using UnityEngine;
 public class PlateIconsUI : MonoBehaviour
 {
     [SerializeField] private PlateKitchenObject plateKitchenObject;
-    [SerializeField] private Transform imageTemplateTransform;
+    [SerializeField] private Transform iconTemplateTransform;
 
     private void Start()
     {
         plateKitchenObject.OnIngredientAdded += PlateKitchenObject_OnIngredientAdded;
 
-        imageTemplateTransform.gameObject.SetActive(false);
+        iconTemplateTransform.gameObject.SetActive(false);
     }
 
     private void PlateKitchenObject_OnIngredientAdded(object sender, PlateKitchenObject.OnIngredientAddedEventArgs e)
@@ -22,15 +22,15 @@ public class PlateIconsUI : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            if (child == imageTemplateTransform) continue;
+            if (child == iconTemplateTransform) continue;
             Destroy(child.gameObject);
         }
 
         foreach(KitchenObjectSO kitchenObjectSO in plateKitchenObject.GetKitchenObjectSOList())
         {
-            Transform imageTemplate = Instantiate(imageTemplateTransform, transform);
-            imageTemplate.gameObject.SetActive(true);
-            imageTemplate.GetComponent<ImageTemplateSingleUI>().SetKitchenObjectSO(kitchenObjectSO);
+            Transform iconTemplate = Instantiate(iconTemplateTransform, transform);
+            iconTemplate.gameObject.SetActive(true);
+            iconTemplate.GetComponent<IconTemplateSingleUI>().SetKitchenObjectSO(kitchenObjectSO);
         }
     }
 }

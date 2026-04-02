@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ImageTemplateSingleUI : MonoBehaviour
+public class IconTemplateSingleUI : MonoBehaviour
 {
     [SerializeField] private Image iconImage;
 

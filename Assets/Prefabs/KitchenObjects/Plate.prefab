@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlateIconsUI
   plateKitchenObject: {fileID: -1824989835309756514}
-  imageTemplateTransform: {fileID: 2791465003229885055}
+  iconTemplateTransform: {fileID: 2791465003229885055}
 --- !u!114 &6744221045806046612
 MonoBehaviour:
   m_ObjectHideFlags: 0
