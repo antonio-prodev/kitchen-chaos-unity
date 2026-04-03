@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlateKitchenObject : KitchenObject
 {
+    public static event EventHandler OnIngredientAddedStatic;
     public event EventHandler<OnIngredientAddedEventArgs> OnIngredientAdded;
     public class OnIngredientAddedEventArgs : EventArgs
     {
@@ -35,6 +36,7 @@ public class PlateKitchenObject : KitchenObject
             {
                 kitchenObjectSO = kitchenObjectSO
             });
+            OnIngredientAddedStatic?.Invoke(this, EventArgs.Empty);
 
             return true;
         }
