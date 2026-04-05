@@ -32,6 +32,8 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactAlternateText;
     [SerializeField] private TextMeshProUGUI pauseText;
 
+    private Action onCloseAction;
+
 
     private void Awake()
     {
@@ -52,6 +54,7 @@ public class OptionsUI : MonoBehaviour
         closeButton.onClick.AddListener(() =>
         {
             Hide();
+            onCloseAction();
         });
 
         moveUpButton.onClick.AddListener(() => { PerformRebinding(GameInput.Binding.Move_Up); });
@@ -92,9 +95,13 @@ public class OptionsUI : MonoBehaviour
         pauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Pause);
     }
 
-    public void Show()
+    public void Show(Action onCloseAction)
     {
+        this.onCloseAction = onCloseAction;
+
         gameObject.SetActive(true);
+
+        soundEffectsButton.Select();
     }
 
     public void Hide()
